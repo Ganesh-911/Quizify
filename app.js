@@ -11,6 +11,36 @@ console.log("\nPlease select any options by typing either a/b/c/d\n");
 const database = {
   data: [
     {
+  question: "What is the output of 'typeof NaN' in JavaScript?",
+  options: {
+    a: "undefined",
+    b: "number",
+    c: "NaN",
+    d: "object",
+  },
+  correctAnswer: "b",
+},
+{
+  question: "Which method is used to convert JSON to a JavaScript object?",
+  options: {
+    a: "JSON.stringify()",
+    b: "JSON.parse()",
+    c: "JSON.toObject()",
+    d: "JSON.convert()",
+  },
+  correctAnswer: "b",
+},
+{
+  question: "What keyword is used to declare a constant in JavaScript?",
+  options: {
+    a: "var",
+    b: "let",
+    c: "const",
+    d: "static",
+  },
+  correctAnswer: "c",
+},
+    {
       question: `let a = {}, b = {}
 console.log(a == b)
 console.log(a === b)`,
@@ -48,15 +78,15 @@ const leaderBoard = {
   data: [
     {
       name: "Ashish",
-      score: 1,
-    },
-    {
-      name: "Riya",
       score: 3,
     },
     {
+      name: "Riya",
+      score: 6,
+    },
+    {
       name: "Jay",
-      score: 2,
+      score: 5,
     },
   ],
 };
@@ -95,6 +125,7 @@ function showHighScorer(leaderBoard) {
     console.log(kuler(`${leader.name} -  Score: ${leader.score}`, "#9333ea"));
   }
 }
+
 
 showQuestionAndOptions(database);
 console.log(kuler(`\nYour score is - ${score}`, "#5eead4"));
